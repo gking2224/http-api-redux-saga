@@ -1,0 +1,28 @@
+{
+  "name": "@animando/http-api-redux-saga",
+  "version": "1.0.0",
+  "description": "Redux saga for http api",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean:ts": "rm -rf build",
+    "clean": "npm run clean:ts",
+    "build": "npm run clean && npm run build:ts",
+    "build:ts": "tsc -p ."
+  },
+  "keywords": [],
+  "author": "Graham King",
+  "license": "MIT",
+  "dependencies": {
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3",
+    "redux-saga-routines": "^3.2.2"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@types/redux": "^3.6.0",
+    "@types/redux-saga": "^0.10.5",
+    "@types/redux-saga-routines": "^3.1.0"
+  }
+}
